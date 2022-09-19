@@ -31,8 +31,9 @@ import FileHandle from '../components/FileHandle'
 	<body>
 		<Header />
 		<main>
-			<FileHandle client:visible file={await Astro.glob(`./blog/go/*.md`)} title='go' />
-			<FileHandle client:visible file={await Astro.glob(`./blog/js/*.md`)} title='js' />
+			<FileHandle client:visible file={await Astro.glob('./blog/rust/*.md')} title='rust' />
+			<FileHandle client:visible file={await Astro.glob('./blog/js/*.md')} title='js' />
+			<FileHandle client:visible file={await Astro.glob('./blog/ts/*.md')} title='ts' />
 			<Footer />
 		</main>
 	</body>
